@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/SmilingSun_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
+    <title>|  Lets Goooo</title>
+
+</head>
+<body>
+    <model-viewer id="candy-cake" src="model/candy_cake/scene.gltf" alt="a beautiful candy cake" disable-pan shadow-intensity="1" camera-target="0m -2m 1m" camera-orbit="0deg 0deg 100%" ar interpolation-decay="200"></model-viewer>
+    <div class="title">
+        <h1>BirthDay</h1>
+        <span></span>
+    </div>
+    <div id="background"></div>
+
+    <div class="buttons">
+        <button class="back" disabled>Back</button>
+        <button class="next">Next</button>
+    </div>
+
+    <div class="progress-feedback">
+        <h3 class="i-0 active">1</h3>
+        <h3 class="i-1">2</h3>
+        <h3 class="i-2">3</h3>
+        <div class="progress-dot"></div>
+    </div>
+
+    <div class="birthday-text text-0 active">Happy Birthday Ma</div>
+    <div class="birthday-text text-1">Semoga Panjang Umur!</div>
+    <div class="birthday-text text-2">Semoga selalu diberi kesehatan dan diberi rezeki yang melimpah</div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
